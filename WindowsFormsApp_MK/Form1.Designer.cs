@@ -38,8 +38,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.reoGridControl1 = new unvell.ReoGrid.ReoGridControl();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,8 +52,6 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.timer_DAQ = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -68,19 +68,19 @@
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 804);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 639);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1344, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1008, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(39, 65);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(133, 22);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 41);
+            this.button1.Size = new System.Drawing.Size(70, 33);
             this.button1.TabIndex = 3;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             this.splitContainer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -106,9 +106,9 @@
             this.splitContainer1.Panel2.Controls.Add(this.glControl1);
             this.splitContainer1.Panel2.Controls.Add(this.chart1);
             this.splitContainer1.Panel2MinSize = 200;
-            this.splitContainer1.Size = new System.Drawing.Size(1344, 804);
-            this.splitContainer1.SplitterDistance = 417;
-            this.splitContainer1.SplitterWidth = 8;
+            this.splitContainer1.Size = new System.Drawing.Size(1008, 639);
+            this.splitContainer1.SplitterDistance = 331;
+            this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 5;
             // 
             // splitContainer2
@@ -116,15 +116,15 @@
             this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.splitContainer2.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 28);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer2.Location = new System.Drawing.Point(0, 25);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer2.Name = "splitContainer2";
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.reoGridControl1);
             this.splitContainer2.Panel1.Controls.Add(this.button3);
             this.splitContainer2.Panel1.Controls.Add(this.button2);
+            this.splitContainer2.Panel1.Controls.Add(this.reoGridControl1);
             this.splitContainer2.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             // 
             // splitContainer2.Panel2
@@ -132,10 +132,52 @@
             this.splitContainer2.Panel2.Controls.Add(this.button1);
             this.splitContainer2.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer2.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer2.Size = new System.Drawing.Size(1344, 389);
-            this.splitContainer2.SplitterDistance = 673;
-            this.splitContainer2.SplitterWidth = 10;
+            this.splitContainer2.Size = new System.Drawing.Size(1008, 306);
+            this.splitContainer2.SplitterDistance = 504;
+            this.splitContainer2.SplitterWidth = 8;
             this.splitContainer2.TabIndex = 5;
+            // 
+            // reoGridControl1
+            // 
+            this.reoGridControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.reoGridControl1.ColumnHeaderContextMenuStrip = null;
+            this.reoGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reoGridControl1.LeadHeaderContextMenuStrip = null;
+            this.reoGridControl1.Location = new System.Drawing.Point(0, 0);
+            this.reoGridControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.reoGridControl1.Name = "reoGridControl1";
+            this.reoGridControl1.RowHeaderContextMenuStrip = null;
+            this.reoGridControl1.Script = null;
+            this.reoGridControl1.SheetTabContextMenuStrip = null;
+            this.reoGridControl1.SheetTabNewButtonVisible = true;
+            this.reoGridControl1.SheetTabVisible = true;
+            this.reoGridControl1.SheetTabWidth = 60;
+            this.reoGridControl1.ShowScrollEndSpacing = true;
+            this.reoGridControl1.Size = new System.Drawing.Size(502, 304);
+            this.reoGridControl1.TabIndex = 0;
+            this.reoGridControl1.Text = "reoGridControl1";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(302, 266);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(82, 34);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "保存";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(154, 266);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 34);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "打开设计文件";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -150,31 +192,12 @@
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 100);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 80);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(572, 275);
+            this.dataGridView1.Size = new System.Drawing.Size(429, 220);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // reoGridControl1
-            // 
-            this.reoGridControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.reoGridControl1.ColumnHeaderContextMenuStrip = null;
-            this.reoGridControl1.LeadHeaderContextMenuStrip = null;
-            this.reoGridControl1.Location = new System.Drawing.Point(24, 19);
-            this.reoGridControl1.Name = "reoGridControl1";
-            this.reoGridControl1.RowHeaderContextMenuStrip = null;
-            this.reoGridControl1.Script = null;
-            this.reoGridControl1.SheetTabContextMenuStrip = null;
-            this.reoGridControl1.SheetTabNewButtonVisible = true;
-            this.reoGridControl1.SheetTabVisible = true;
-            this.reoGridControl1.SheetTabWidth = 60;
-            this.reoGridControl1.ShowScrollEndSpacing = true;
-            this.reoGridControl1.Size = new System.Drawing.Size(624, 322);
-            this.reoGridControl1.TabIndex = 0;
-            this.reoGridControl1.Text = "reoGridControl1";
             // 
             // menuStrip1
             // 
@@ -188,48 +211,49 @@
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(1344, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1008, 25);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(53, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(44, 21);
             this.toolStripMenuItem1.Text = "文件";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(53, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(44, 21);
             this.toolStripMenuItem2.Text = "数据";
             // 
             // 测量ToolStripMenuItem
             // 
             this.测量ToolStripMenuItem.Name = "测量ToolStripMenuItem";
-            this.测量ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.测量ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.测量ToolStripMenuItem.Text = "测量";
             // 
             // 工具ToolStripMenuItem
             // 
             this.工具ToolStripMenuItem.Name = "工具ToolStripMenuItem";
-            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.工具ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.工具ToolStripMenuItem.Text = "工具";
             // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // glControl1
             // 
             this.glControl1.BackColor = System.Drawing.Color.Black;
-            this.glControl1.Location = new System.Drawing.Point(683, 12);
-            this.glControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.glControl1.Location = new System.Drawing.Point(512, 10);
+            this.glControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.glControl1.Name = "glControl1";
-            this.glControl1.Size = new System.Drawing.Size(624, 218);
+            this.glControl1.Size = new System.Drawing.Size(468, 174);
             this.glControl1.TabIndex = 1;
             this.glControl1.VSync = false;
             // 
@@ -239,8 +263,8 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(11, 12);
-            this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chart1.Location = new System.Drawing.Point(8, 10);
+            this.chart1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -249,7 +273,7 @@
             series1.Name = "Series1";
             series1.YValuesPerPoint = 2;
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(664, 192);
+            this.chart1.Size = new System.Drawing.Size(498, 154);
             this.chart1.TabIndex = 6;
             this.chart1.Text = "chart1";
             // 
@@ -257,35 +281,15 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(205, 332);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 43);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "打开设计文件";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(402, 332);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 43);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "保存";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1344, 826);
+            this.ClientSize = new System.Drawing.Size(1008, 661);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "YSD1000随钻测量软件";
             this.Load += new System.EventHandler(this.Form1_Load);
