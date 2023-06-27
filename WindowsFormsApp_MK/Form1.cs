@@ -10,12 +10,14 @@ using System.Data.SQLite;
 using System.Windows.Forms;
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
+using unvell.ReoGrid;
 
 namespace WindowsFormsApp_MK
 {
     public partial class Form1 : Form
     {
         SQLiteConnection conn = null;
+        string resultFile;
         public Form1()
         {
             InitializeComponent();
@@ -41,6 +43,7 @@ namespace WindowsFormsApp_MK
             mAdapter.Fill(dt);
             //绑定数据到DataGridView
             dataGridView1.DataSource = dt;
+            //reoGridControl1.DataBindings.Add(dt);
             //关闭数据库
             conn.Close();
             this.chart1.Series[0].Name = "轨迹图";
@@ -92,6 +95,31 @@ namespace WindowsFormsApp_MK
 
             }
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+            openFileDialog1.InitialDirectory = System.Environment.CurrentDirectory;
+            //MessageBox.Show(PublicValue.Cur_Path);
+            //openFileDialog1.Filter = "Excel Files (*.xlsx)|*精度记录*.xlsx";
+            openFileDialog1.RestoreDirectory = true;
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                resultFile = openFileDialog1.FileName;
+                //MessageBox.Show(resultFile);
+                reoGridControl1.Load(resultFile);
+
+            }
+
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+                reoGridControl1.Save(resultFile);
+                 
         }
     }
 }
